@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>🇨🇷 Costa Rica Accesible</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/estilos.css">
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+<header>
+  <div class="header-contenido">
+    <img src="img/flag.png" alt="Bandera CR" class="icono-flag">
+    <img src="img/logo-accesible.png" alt="Accesible" class="icono-logo">
+    <h1>Costa Rica Accesible</h1>
+    <img src="img/logo-accesible.png" alt="Accesible" class="icono-logo">
+    <img src="img/flag.png" alt="Bandera CR" class="icono-flag">
+  </div>
+</header>
+
+<!-- PESTAÑAS SUPERIORES -->
+<div id="menu-pestanas">
+  <div class="pestana activa" data-target="seccion-inicio">Inicio</div>
+  <div class="pestana" data-target="seccion-lugares">Lugares</div>
+  <div class="pestana" data-target="seccion-formulario">Reportar Lugar</div>
+  <div class="pestana" data-target="seccion-transporte">Transporte</div>
+  <div class="pestana" data-target="seccion-cursos">Cursos / Deportes</div>
+  <div class="pestana" data-target="seccion-video">YouTube / Podcast</div>
+  <div class="pestana" data-target="seccion-redes">Redes Sociales</div>
+
+</div>
+
+<!-- SECCIONES -->
+
+<!-- INICIO -->
+<section id="seccion-inicio" class="seccion activa">
+  <p>
+    ¡Bienvenido a <strong>Costa Rica Accesible</strong>! Esta página ha sido creada para centralizar toda la información sobre lugares, servicios y actividades accesibles en Costa Rica. 
+    Nuestro objetivo es que las personas con movilidad reducida, usuarios de silla de ruedas o cualquier persona que necesite información sobre accesibilidad, puedan planificar sus visitas de manera fácil y segura.
+  </p>
+
+  <p>
+    Aquí podrás explorar diferentes <strong>categorías</strong> como restaurantes, cafeterías, playas, cines, mall, parques, hospitales y mucho más. Cada lugar incluye detalles sobre su nivel de accesibilidad, descripciones, fotos y mapas interactivos para que encuentres la mejor ruta.
+  </p>
+
+  <p>
+    Utiliza la pestaña de Lugares para explorar destinos accesibles y ver su ubicación en el mapa. Haz clic en cualquier opción para abrir su ficha con información detallada y rutas disponibles mediante Google Maps o Waze.
+  </p>
+
+  <p>
+    Nuestro objetivo es que <strong>Costa Rica Accesible</strong> sea tu guía confiable para explorar el país con confianza, seguridad y comodidad, garantizando que la accesibilidad esté al alcance de todos.
+  </p></section>
+
+<!-- LUGARES -->
+<section id="seccion-lugares" class="seccion">
+  <!-- PESTAÑAS DE CATEGORÍAS -->
+  <div id="menu-categorias" style="margin-top:40px;">
+    <div class="pestana activa" data-categoria="Restaurantes">Restaurantes</div>
+    <div class="pestana" data-categoria="Cafeterías">Cafeterías</div>
+    <div class="pestana" data-categoria="Playas">Playas</div>
+    <div class="pestana" data-categoria="Actividades">Actividades</div>
+    <div class="pestana" data-categoria="Cines">Cine</div>
+    <div class="pestana" data-categoria="Mall">Mall</div>
+    <div class="pestana" data-categoria="Supermercados">Supermercado</div>
+    <div class="pestana" data-categoria="Hospitales">Hospitales</div>
+    <div class="pestana" data-categoria="Parques">Parques</div>
+    <div class="pestana" data-categoria="Instituciones Publicas">Instituciones Publicas</div>
+    <div class="pestana" data-categoria="Volcanes">Volcanes</div>
+    <div class="pestana" data-categoria="Hoteles">Hoteles</div>
+
+  </div>
+
+  <div id="descripcion-categoria" class="descripcion-categoria"></div>
+  <div id="lugares-lista"></div>
+  <div id="mapa-cr"></div>
+</section>
+
+<!-- FORMULARIO -->
+<section id="seccion-formulario" class="seccion">
+  <h2>📍 Reportar un lugar</h2>
+  <form id="form-lugar" action="https://formspree.io/f/xkobwdzp" method="POST" enctype="multipart/form-data">
+    
+    <input name="nombre_lugar" placeholder="Nombre del lugar" required>
+    
+    <select id="form-categoria" name="categoria" required>
+      <option value="">Categoría</option>
+      <option value="Hospitales">Hotel</option>
+      <option value="Hospitales">Volcan</option>
+      
+    </select>
+    
+    <select id="form-provincia" name="provincia" required>
+      <option value="">Provincia</option>
+    </select>
+    
+    <select name="accesibilidad" required>
+      <option value="">Accesibilidad</option>
+      <option>Accesible</option>
+      <option>Parcial</option>
+      <option>No accesible</option>
+    </select>
+    
+    <textarea name="observaciones" placeholder="Observaciones"></textarea>
+    
+    <input type="file" name="imagen" accept="image/*">
+    
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="mensaje-envio" class="mensaje-envio">¡Gracias! Tu reporte ha sido enviado.</p>
+</section>
+
+<style>
+  .mensaje-envio {
+    display: none;
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 1.2s ease-out;
+  }
+
+  .mensaje-envio.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+</style>
+
+<script>
+  const form = document.getElementById('form-lugar');
+  const mensaje = document.getElementById('mensaje-envio');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Evita recarga
+
+    const formData = new FormData(form);
+    const action = form.action;
+
+    try {
+      const response = await fetch(action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset(); // Limpiar formulario
+        mensaje.style.color = 'green';
+        mensaje.classList.add('show');
+
+        // Desaparece después de 3 segundos
+        setTimeout(() => {
+          mensaje.classList.remove('show');
+        }, 3000);
+
+      } else {
+        mensaje.style.color = 'red';
+        mensaje.innerText = '¡Oops! Algo salió mal, intenta de nuevo.';
+        mensaje.style.display = 'block';
+      }
+
+    } catch (error) {
+      mensaje.style.color = 'red';
+      mensaje.innerText = '¡Error de conexión! Intenta más tarde.';
+      mensaje.style.display = 'block';
+    }
+  });
+</script>
+
+
+
+<!-- TRANSPORTE -->
+<section id="seccion-transporte" class="seccion">
+  <h2>Transporte accesible en Costa Rica</h2>
+  <div class="tarjetas-transporte">
+    <div class="tarjeta-transporte azul">
+      <h3><i class="fas fa-bus"></i> MoviCare CR</h3>
+      <p><i class="fas fa-wheelchair"></i> Servicio de transporte accesible para personas con movilidad reducida o usuarios de silla de ruedas.</p>
+      <p><i class="fas fa-map-marker-alt"></i> San José, Costa Rica</p>
+      <p><i class="fas fa-phone"></i> WhatsApp: +506 6019-1762</p>
+      <a href="https://www.instagram.com/movicare.cr?igsh=MWczcXZ6MG1qMGUweg==" target="_blank" class="btn-transporte">
+        <i class="fab fa-instagram"></i> Instagram MoviCare
+      </a>
+      <p class="nota-peque"><i class="fas fa-check-circle"></i> Movilidad inclusiva</p>
+      <p class="nota-peque"><i class="fas fa-check-circle"></i> Reserva vía WhatsApp o Instagram</p>
+    </div>
+
+    <div class="tarjeta-transporte verde">
+      <h3><i class="fas fa-bus"></i> LAR Transportes – Accessible</h3>
+      <p><i class="fas fa-wheelchair"></i> Transporte accesible con vehículos adaptados.</p>
+      <p><i class="fas fa-map-marker-alt"></i> Guanacaste, Costa Rica</p>
+      <a href="https://www.lartransport.com/service-page/accessible-transportation-for-passengers" target="_blank" class="btn-transporte">
+        <i class="fas fa-info-circle"></i> Más info
+      </a>
+      <p class="nota-peque"><i class="fas fa-check-circle"></i> Servicio adaptado</p>
+      <p class="nota-peque"><i class="fas fa-check-circle"></i> Ideal para turismo</p>
+    </div>
+  </div>
+</section>
+
+<!-- CURSOS / DEPORTES -->
+<section id="seccion-cursos" class="seccion">
+  <h2>Cursos y Deportes</h2>
+  <div class="cursos-grid">
+    <div class="curso-card"><img src="img/ya-danza-1.png" alt="Danza accesible"></div>
+    <div class="curso-card"><img src="img/ya-danza-2.png" alt="Danza inclusiva"></div>
+    <div class="curso-card"><img src="img/ya-danza-3.png" alt="Movimiento adaptado"></div>
+  </div>
+</section>
+
+<!-- VIDEO / PODCAST -->
+<section id="seccion-video" class="seccion">
+  <div class="video-wrapper">
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/U87Wuf988CU" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+      </div>
+  <div style="margin-top:20px; text-align:center;">
+    <div class="podcast-botones">
+      <a href="https://www.youtube.com/@Acceso7600" target="_blank" class="btn-youtube">
+        ▶ YouTube Acceso 7600
+      </a>
+      <a href="#" class="btn-spotify">
+        🎧 Muy pronto Podcast Acceso 7600 en Spotify
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- REDES -->
+<section id="seccion-redes" class="seccion">
+  <div class="redes-contenedor">
+    <a href="https://www.instagram.com/acceso_7600?igsh=endneGx3dG9lZGll" target="_blank" class="red-icon instagram">Instagram</a>
+    <a href="https://www.tiktok.com/@acceso7600?_r=1&_t=ZM-933groItn4K" target="_blank" class="red-icon tiktok">TikTok</a>
+    <a href="https://www.facebook.com/share/1GAzPQ5WDS/?mibextid=wwXIfr" target="_blank" class="red-icon facebook">Facebook</a>
+  </div>
+</section>
+
+
+
+
+<!-- MODAL FICHA -->
+<div id="ficha-modal" class="modal oculto">
+  <div class="modal-contenido">
+    <button class="cerrar" onclick="cerrarFicha()">✖</button>
+    <div id="contenido-ficha"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+     <!-- BOTÓN PODCAST -->
+<a href="TU_LINK_DEL_PODCAST" class="btn btn-podcast" target="_blank">
+  <span class="icon-play">▶</span>
+  <span class="text-podcast">ESCUCHAR PODCAST</span>
+</a>
+
+
+  <div class="footer-redes">
+    <a href="https://www.instagram.com/acceso_7600" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@acceso7600" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/share/1GAzPQ5WDS/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/@Acceso7600" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+
+
+  <p>© 2026 Costa Rica Accesible. Todos los derechos reservados. Proyecto, diseño y desarrollo Catherine Alfaro Arias </p>
+</footer>
+
+<!-- JS -->
+<script src="js/app.js"></script>
+</body>
+</html>

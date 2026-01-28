@@ -1,0 +1,22 @@
+{
+  "lugares":[
+    {
+      "id":1,
+      "nombre":"Cine Magaly",
+      "categoria":"Cines",
+      "provincia":"San José",
+      "estadoAccesibilidad":"accesible",
+      "descripcion":"Cine accesible en el centro de San José.",
+      "ubicacion":{"lat":9.9333,"lng":-84.0833}
+    },
+    {
+      "id":2,
+      "nombre":"Cafetería Central",
+      "categoria":"Cafeterías",
+      "provincia":"Heredia",
+      "estadoAccesibilidad":"parcial",
+      "descripcion":"Acceso limitado, sin baño accesible.",
+      "ubicacion":{"lat":9.9986,"lng":-84.1175}
+    }
+  ]
+}
