@@ -72,7 +72,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9760, lng: -84.8380 },
     descripcion: "Suspendido temporalmente por draga en la playa. Parqueo en la carretera – Servicio sanitario del restaurante Cocos – Pasarelas.",
     disponibilidad: "Suspendida",
-    imagen: "IMG/playa-puntarenas.png"
+    imagen: "img/playa-puntarenas.png"
   },
   {
     nombre: "Playa Caldera",
