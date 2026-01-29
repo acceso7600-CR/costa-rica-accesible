@@ -12,7 +12,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9333, lng: -84.0833 },
     descripcion: "Ubicación: Oficina del ICT en entrada pública. Horario: Todos los días de 8am a 4pm. Parqueo Asignado – Cambiador Inclusivo – Silla Anfibia – Pasarela en la playa.",
     disponibilidad: "Completa",
-    imagen: "img/playa-panama.png"
+    imagen: "IMG/playa-panama.png"
   },
   {
     nombre: "Playa Hermosa",
@@ -22,7 +22,7 @@ const lugaresData = [
     ubicacion: { lat: 10.3944, lng: -85.6999 },
     descripcion: "Ubicación: Hotel Playa Hermosa Bosque del Mar. Horario: Todos los días de 9am a 4pm. Uso del parqueo del hotel – Servicio sanitario de recepción – Duchas externas – Silla Anfibia – Pasarelas en la playa.",
     disponibilidad: "Completa",
-    imagen: "img/playa-hermosa.png"
+    imagen: "IMG/playa-hermosa.png"
   },
   {
     nombre: "Playa Potrero",
@@ -32,7 +32,7 @@ const lugaresData = [
     ubicacion: { lat: 10.3000, lng: -85.7000 },
     descripcion: "Ubicación: Entrada pública al lado de Hotel Bahia del Sol. Reservación previa al 2654-4671. Silla Anfibia – Pasarelas en la playa.",
     disponibilidad: "Reservada",
-    imagen: "img/playa-potrero.png"
+    imagen: "IMG/playa-potrero.png"
   },
   {
     nombre: "Playa Tamarindo",
@@ -42,7 +42,7 @@ const lugaresData = [
     ubicacion: { lat: 10.2992, lng: -85.8408 },
     descripcion: "Parqueo de ADIT al lado de Restaurante Vaquero. Duchas externas con costo. Uso gratuito de Silla Anfibia.",
     disponibilidad: "Completa",
-    imagen: "img/playa-tamarindo.png"
+    imagen: "IMG/playa-tamarindo.png"
   },
   {
     nombre: "Playa Samara",
@@ -52,7 +52,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9000, lng: -85.3500 },
     descripcion: "Pasarela al lado del muelle público. Reservación previa con Choco's Surf School 8937-5246. Silla Anfibia – Pasarela – Duchas externas.",
     disponibilidad: "Reservada",
-    imagen: "img/playa-samara.png"
+    imagen: "IMG/playa-samara.png"
   },
   {
     nombre: "Playa Blanca, Punta Morales",
@@ -62,7 +62,7 @@ const lugaresData = [
     ubicacion: { lat: 9.8000, lng: -85.2000 },
     descripcion: "Administrador: Cámara de turismo Punta Morales Playa Blanca y ADI Cocorocas. Silla Anfibia – Pasarela – Servicio sanitario y ducha exterior.",
     disponibilidad: "Limitada",
-    imagen: "img/playa-blanca.png"
+    imagen: "IMG/playa-blanca.png"
   },
   {
     nombre: "Playa Puntarenas",
@@ -72,7 +72,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9760, lng: -84.8380 },
     descripcion: "Suspendido temporalmente por draga en la playa. Parqueo en la carretera – Servicio sanitario del restaurante Cocos – Pasarelas.",
     disponibilidad: "Suspendida",
-    imagen: "img/playa-puntarenas.png"
+    imagen: "IMG/playa-puntarenas.png"
   },
   {
     nombre: "Playa Caldera",
@@ -82,7 +82,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9000, lng: -84.6000 },
     descripcion: "Parqueo público Cruz Roja. Horario: Lunes a Domingo 7am-7pm. Coordinar con Yosmar 64689466. Silla Anfibia – Pasarela en la playa.",
     disponibilidad: "Completa",
-    imagen: "img/playa-caldera.png"
+    imagen: "IMG/playa-caldera.png"
   },
   {
     nombre: "Playa Herradura",
@@ -92,7 +92,7 @@ const lugaresData = [
     ubicacion: { lat: 9.7500, lng: -84.6150 },
     descripcion: "Administrador: Surf Adaptado. Frente a SUPHERR. Silla Anfibia – Pasarelas.",
     disponibilidad: "Completa",
-    imagen: "img/playa-herradura.png"
+    imagen: "IMG/playa-herradura.png"
   },
   {
     nombre: "Playa Jaco",
@@ -102,7 +102,7 @@ const lugaresData = [
     ubicacion: { lat: 9.6167, lng: -84.6333 },
     descripcion: "Suspendido temporalmente. Responsable: Municipalidad de Garabito.",
     disponibilidad: "Suspendida",
-    imagen: "img/playa-jaco.png"
+    imagen: "IMG/playa-jaco.png"
   },
   {
     nombre: "Playa Bandera",
@@ -112,7 +112,7 @@ const lugaresData = [
     ubicacion: { lat: 9.5000, lng: -84.5000 },
     descripcion: "Bajo coordinación y solicitud ADI Bandera – administrador 84638454. Silla Anfibia – Pasarelas.",
     disponibilidad: "Limitada",
-    imagen: "img/playa-bandera.png"
+    imagen: "IMG/playa-bandera.png"
   },
   {
     nombre: "Playa Espadilla",
@@ -122,7 +122,7 @@ const lugaresData = [
     ubicacion: { lat: 9.4500, lng: -84.6500 },
     descripcion: "Administrador: Fundación Sayu. Frente rotonda en playa pública. Silla Anfibia – Pasarelas.",
     disponibilidad: "Completa",
-    imagen: "img/playa-espadilla.png"
+    imagen: "IMG/playa-espadilla.png"
   },
   {
     nombre: "Playa Ventanas",
@@ -132,7 +132,7 @@ const lugaresData = [
     ubicacion: { lat: 8.9000, lng: -83.5000 },
     descripcion: "Suspendidas temporalmente. Responsable: Municipalidad de Osa.",
     disponibilidad: "Suspendida",
-    imagen: "img/playa-ventanas.png"
+    imagen: "IMG/playa-ventanas.png"
   },
   {
     nombre: "Playa Hermosa Osa",
@@ -142,7 +142,7 @@ const lugaresData = [
     ubicacion: { lat: 8.9000, lng: -83.5000 },
     descripcion: "Suspendidas temporalmente. Responsable: Municipalidad de Osa.",
     disponibilidad: "Suspendida",
-    imagen: "img/playa-hermosa-osa.png"
+    imagen: "IMG/playa-hermosa-osa.png"
   },
   {
     nombre: "Playa Piuta",
@@ -152,7 +152,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9833, lng: -83.0333 },
     descripcion: "Suspendida temporalmente.",
     disponibilidad: "Suspendida",
-    imagen: "img/playa-piuta.png"
+    imagen: "IMG/playa-piuta.png"
   },
   {
     nombre: "Playa Cieneguita",
@@ -162,7 +162,7 @@ const lugaresData = [
     ubicacion: { lat: 10.0500, lng: -83.0000 },
     descripcion: "Administrada por ADI Cieneguita Limón. Coordinar visita al 88774620 / 87307298. Silla Anfibia – Pasarelas.",
     disponibilidad: "Limitada",
-    imagen: "img/playa-cieneguita.png"
+    imagen: "IMG/playa-cieneguita.png"
   },
   {
     nombre: "Playa Negra, Cahuita",
@@ -172,7 +172,7 @@ const lugaresData = [
     ubicacion: { lat: 9.7500, lng: -82.8333 },
     descripcion: "Ubicación y Administradores: Chao´s Bar Restaurant y Reggae Bar. Horario: Miércoles a Domingo 10am-4pm. Silla Anfibia – Pasarela – Servicios sanitarios de Chao's Bar.",
     disponibilidad: "Completa",
-    imagen: "img/playa-negra.png"
+    imagen: "IMG/playa-negra.png"
   },
   {
     nombre: "Playa Manzanillo",
@@ -182,7 +182,7 @@ const lugaresData = [
     ubicacion: { lat: 9.6000, lng: -82.8500 },
     descripcion: "Frente a los baños públicos de la ADI Manzanillo al lado de cancha de fútbol. Administrador Edith 85316912. Silla Anfibia – Pasarelas – Duchas externas.",
     disponibilidad: "Completa",
-    imagen: "img/playa-manzanillo.png"
+    imagen: "IMG/playa-manzanillo.png"
   },
 
 
@@ -195,7 +195,7 @@ const lugaresData = [
   ubicacion: { lat: 9.9370, lng: -84.0420 },
   descripcion: "Cafetería y espacio coworking con entrada accesible y circulación cómoda para silla de ruedas.",
   disponibilidad: "Completa",
-  imagen: "img/cafe-gracias-escalante.png"
+  imagen: "IMG/cafe-gracias-escalante.png"
 },
 {
   nombre: "La Esquina del Café",
@@ -205,7 +205,7 @@ const lugaresData = [
   ubicacion: { lat: 9.9380, lng: -84.1060 },
   descripcion: "Cafetería con acceso a nivel, mesas accesibles y ambiente tranquilo.",
   disponibilidad: "Completa",
-  imagen: "img/cafe-esquina.png"
+  imagen: "IMG/cafe-esquina.png"
 },
 {
 
@@ -217,7 +217,7 @@ const lugaresData = [
   descripcion: "Cafetería Britt con acceso plano y espacios cómodos para personas en silla de ruedas.",
   disponibilidad: "Completa",
   imagenes: [
-    "img/cafe-britt-heredia2.png"   
+    "IMG/cafe-britt-heredia2.png"   
   ]
 
 },
@@ -229,7 +229,7 @@ const lugaresData = [
   ubicacion: { lat: 10.0178, lng: -84.2100 },
   descripcion: "Starbucks con acceso accesible y circulación adecuada en centro comercial La Hacienda.",
   disponibilidad: "Completa",
-  imagen: "img/cafe-starbucks-lahacienda.png"
+  imagen: "IMG/cafe-starbucks-lahacienda.png"
 }
 
   ,
@@ -247,7 +247,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9359, lng: -84.0917 },
     descripcion: "Restaurante moderno en Rohrmoser. Entrada a nivel, mesas amplias y circulación cómoda para silla de ruedas.",
     disponibilidad: "Completa",
-    imagen: "img/restaurante-furca.png"
+    imagen: "IMG/restaurante-furca.png"
   },
   {
     nombre: "Nuestra Tierra",
@@ -257,7 +257,7 @@ const lugaresData = [
     ubicacion: { lat: 9.9336, lng: -84.0822 },
     descripcion: "Restaurante típico costarricense en San José centro. Entrada a nivel desde acera y espacios amplios.",
     disponibilidad: "Completa",
-    imagen: "img/restaurante-nuestra-tierra.png"
+    imagen: "IMG/restaurante-nuestra-tierra.png"
   },
   {
     nombre: "Don Rufino",
@@ -267,7 +267,7 @@ const lugaresData = [
     ubicacion: { lat: 10.4673, lng: -84.6426 },
     descripcion: "Ubicado en La Fortuna. Acceso plano y buena distribución interna.",
     disponibilidad: "Completa",
-    imagen: "img/restaurante-don-rufino.png"
+    imagen: "IMG/restaurante-don-rufino.png"
   },
   {
     nombre: "Pangas Beach Club",
@@ -277,7 +277,7 @@ const lugaresData = [
     ubicacion: { lat: 10.3006, lng: -85.8417 },
     descripcion: "Restaurante en Tamarindo con acceso plano desde parqueo.",
     disponibilidad: "Completa",
-    imagen: "img/restaurante-pangas.png"
+    imagen: "IMG/restaurante-pangas.png"
   },
   
   {
@@ -288,7 +288,7 @@ const lugaresData = [
     ubicacion: { lat: 9.7405, lng: -82.8428 },
     descripcion: "Restaurante en Cahuita asociado a proyectos de accesibilidad en playa.",
     disponibilidad: "Completa",
-    imagen: "img/restaurante-chaos.png"
+    imagen: "IMG/restaurante-chaos.png"
   }
 
 ];
@@ -306,9 +306,9 @@ const volcanesData = [
     descripcion: "Uno de los cráteres volcánicos más grandes del mundo; senderos y miradores rodeados de bosque. Servicios de parqueo, sanitarios y cafetería.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/volcan-poas-1.png",
-      "img/volcan-poas-2.png",
-      "img/volcan-poas-3.png"
+      "IMG/volcan-poas-1.png",
+      "IMG/volcan-poas-2.png",
+      "IMG/volcan-poas-3.png"
     ]
   },
   {
@@ -320,9 +320,9 @@ const volcanesData = [
     descripcion: "El volcán más alto de Costa Rica con múltiples cráteres y miradores panorámicos; accesible por carretera hasta puntos de vista.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/volcan-irazu-1.png",
-      "img/volcan-irazu-2.png",
-      "img/volcan-irazu-3.png"
+      "IMG/volcan-irazu-1.png",
+      "IMG/volcan-irazu-2.png",
+      "IMG/volcan-irazu-3.png"
     ]
   },
   {
@@ -334,8 +334,8 @@ const volcanesData = [
     descripcion: "Imponente volcán clásico cercano a La Fortuna; conocido por su belleza natural, senderos y zonas boscosas.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/volcan-arenal-1.png",
-      "img/volcan-arenal-2.png"
+      "IMG/volcan-arenal-1.png",
+      "IMG/volcan-arenal-2.png"
     ]
   }
 ];
@@ -353,7 +353,7 @@ const hotelesData = [
     descripcion: "Rampa de entrada, elevadores y habitaciones adaptadas con baños accesibles.",
     ubicacion: { lat: 9.9333, lng: -84.0833 },
     imagenes: [
-      "img/hotel-presidente-1.png",
+      "IMG/hotel-presidente-1.png",
      
     ]
   },
@@ -366,7 +366,7 @@ const hotelesData = [
     descripcion: "Rampa en entrada, ascensores y baños adaptados, rutas amplias.",
     ubicacion: { lat: 9.9985, lng: -84.1190 },
     imagenes: [
-      "img/palma-real-1.png",
+      "IMG/palma-real-1.png",
     
     ]
   },
@@ -378,7 +378,7 @@ const hotelesData = [
     descripcion: "Habitaciones adaptadas, ascensores y rutas sin barreras.",
     ubicacion: { lat: 9.9350, lng: -84.0846 },
     imagenes: [
-      "img/gran-hotel-cr-1.png",
+      "IMG/gran-hotel-cr-1.png",
    
     ]
   },
@@ -391,7 +391,7 @@ const hotelesData = [
     descripcion: "Diseñado con accesibilidad integral en áreas públicas y termales.",
     ubicacion: { lat: 10.4947, lng: -84.6335 },
     imagenes: [
-      "img/arenal-springs-1.png",
+      "IMG/arenal-springs-1.png",
     
      
     ]
@@ -404,7 +404,7 @@ const hotelesData = [
     descripcion: "Rutas accesibles, baños y patios adaptados.",
     ubicacion: { lat: 9.4021, lng: -84.1457 },
     imagenes: [
-      "img/la-mariposa-1.png",
+      "IMG/la-mariposa-1.png",
     ]
   },
   {
@@ -415,8 +415,8 @@ const hotelesData = [
     descripcion: "Zonas públicas y accesos adaptados. Confirmar habitación accesible.",
     ubicacion: { lat: 10.5800, lng: -85.6949 },
     imagenes: [
-      "img/westin-conchal-1.png",
-      "img/westin-conchal-2.png",
+      "IMG/westin-conchal-1.png",
+      "IMG/westin-conchal-2.png",
      
     ]
   },
@@ -428,8 +428,8 @@ const hotelesData = [
     descripcion: "Propiedad plana con acceso sencillo a zonas comunes.",
     ubicacion: { lat: 10.3000, lng: -85.8408 },
     imagenes: [
-      "img/tamarindo-diria-1.png",
-      "img/tamarindo-diria-2.png",
+      "IMG/tamarindo-diria-1.png",
+      "IMG/tamarindo-diria-2.png",
     ]
   },
   {
@@ -440,7 +440,7 @@ const hotelesData = [
     descripcion: "Rutas planas y habitaciones espaciosas. Confirmar cuarto adaptado.",
     ubicacion: { lat: 10.4884, lng: -84.6324 },
     imagenes: [
-      "img/arenal-manoa-1.png",
+      "IMG/arenal-manoa-1.png",
    
     ]
   },
@@ -453,9 +453,9 @@ const hotelesData = [
     descripcion: "Rampa inclinada, gradas y parqueo con piedrilla. Difícil sin ayuda. no se puede ingresar a la tienda porque la entrada solo tiene gradas",
     ubicacion: { lat: 9.9760, lng: -84.8380 },
     imagenes: [
-      "img/fiesta-1.png",
-      "img/fiesta-2.png",
-      "img/fiesta-3.png"
+      "IMG/fiesta-1.png",
+      "IMG/fiesta-2.png",
+      "IMG/fiesta-3.png"
     ]
   }
 ];
@@ -472,7 +472,7 @@ const mall = [
     alerta: "⚠️ No se respetan completamente los espacios según la Ley 7600 y se permite que cualquier persona se estacione en ellos.",
     ubicacion: { lat: 9.9985, lng: -84.1165 },
     imagenes: [
-"img/oxigeno-1.png",     
+"IMG/oxigeno-1.png",     
     ]
   },
   {
@@ -484,7 +484,7 @@ const mall = [
     alerta: "⚠️ No se respetan completamente los espacios según la Ley 7600 y se permite que cualquier persona se estacione en ellos.",
     ubicacion: { lat: 9.9445, lng: -84.1577 },
     imagenes: [
-      "img/multi-escazu-1.png",
+      "IMG/multi-escazu-1.png",
     ]
   },
   {
@@ -496,7 +496,7 @@ const mall = [
     alerta: "⚠️ No se respetan completamente los espacios según la Ley 7600 y se permite que cualquier persona se estacione en ellos.",
     ubicacion: { lat: 9.9116, lng: -84.0343 },
     imagenes: [
-      "img/multi-curri-1.png",
+      "IMG/multi-curri-1.png",
     ]
     
   },
@@ -509,7 +509,7 @@ const mall = [
     alerta: "⚠️ No garantizan el respeto a los espacios de parqueo accesibles según la Ley 7600.",
     ubicacion: { lat: 10.0023, lng: -84.2141 },
     imagenes: [
-      "img/ciyt-mall-1.png",
+      "IMG/ciyt-mall-1.png",
     ]
   },
   {
@@ -521,7 +521,7 @@ const mall = [
     alerta: "⚠️ No se respetan completamente los espacios según la Ley 7600 y se permite que cualquier persona se estacione en ellos.",
     ubicacion: { lat: 9.9516, lng: -84.0677 },
     imagenes: [
-      "img/lincoln-1.png",
+      "IMG/lincoln-1.png",
     ]
   },
   {
@@ -533,7 +533,7 @@ const mall = [
     alerta: "⚠️ No se respetan completamente los espacios según la Ley 7600 y se permite que cualquier persona se estacione en ellos.",
     ubicacion: { lat: 9.8841, lng: -84.0092 },
     imagenes: [
-      "img/terra.mall-1.png",
+      "IMG/terra.mall-1.png",
     ]
   },
   {
@@ -545,7 +545,7 @@ const mall = [
     alerta: "⚠️ Los espacios de parqueo NO cumplen con las medidas de la Ley 7600 y se permite que cualquier persona se estacione en ellos.",
     ubicacion: { lat: 9.9375, lng: -84.0503 },
     imagenes: [
-      "img/mall-sanpedro-1.png",
+      "IMG/mall-sanpedro-1.png",
     ]
    
   }
@@ -563,7 +563,7 @@ const hospitalesPrivadosData = [
     estadoAccesibilidad: "♿ Accesible (sujeto a verificación en sitio)",
     disponibilidad: "Completa",
     ubicacion: { lat: 9.9443, lng: -84.1230 },
-    imagenes: ["img/hospital-cima-1.png",
+    imagenes: ["IMG/hospital-cima-1.png",
       
     ]
   },
@@ -575,7 +575,7 @@ const hospitalesPrivadosData = [
     estadoAccesibilidad: "♿ Accesible (sujeto a verificación en sitio)",
     disponibilidad: "Completa",
     ubicacion: { lat: 9.9340, lng: -84.0680 },
-    imagenes: ["img/hospital-clinica-biblica-1.png",
+    imagenes: ["IMG/hospital-clinica-biblica-1.png",
 
     ]
   },
@@ -587,7 +587,7 @@ const hospitalesPrivadosData = [
     estadoAccesibilidad: "♿ Accesible (sujeto a verificación en sitio)",
     disponibilidad: "Completa",
     ubicacion: { lat: 9.9465, lng: -84.0615 },
-    imagenes: ["img/hospital-metropolitano-1.png",
+    imagenes: ["IMG/hospital-metropolitano-1.png",
 
     ]
   },
@@ -599,7 +599,7 @@ const hospitalesPrivadosData = [
     estadoAccesibilidad: "♿ Accesible (sujeto a verificación en sitio)",
     disponibilidad: "Completa",
     ubicacion: { lat: 9.9480, lng: -84.0360 },
-    imagenes: ["img/hospital-la-catolica-1.png"]
+    imagenes: ["IMG/hospital-la-catolica-1.png"]
   },
   {
     nombre: "Hospital Universal",
@@ -609,7 +609,7 @@ const hospitalesPrivadosData = [
     estadoAccesibilidad: "♿ Accesible (sujeto a verificación en sitio)",
     disponibilidad: "Completa",
     ubicacion: { lat: 9.8644, lng: -83.9194 },
-    imagenes: ["img/hospital-universal-1.png"]
+    imagenes: ["IMG/hospital-universal-1.png"]
   },
 
 ];
@@ -760,7 +760,7 @@ const parquesData = [
     disponibilidad: "Completa",
     descripcion: "Pasarelas elevadas que permiten recorrer el bosque y sectores de playa. Acceso plano, senderos amplios y posibilidad de apoyo para personas en silla de ruedas.",
     ubicacion: { lat: 9.7495, lng: -82.8316 },
-    imagenes: ["img/parque-cahuita-1.png"]
+    imagenes: ["IMG/parque-cahuita-1.png"]
   },
   {
     nombre: "Parque Nacional Carara",
@@ -770,7 +770,7 @@ const parquesData = [
     disponibilidad: "Completa",
     descripcion: "Cuenta con sendero universal de más de 1 km, rampas, baños accesibles, parqueo adaptado y señalización inclusiva (Braille y mapas táctiles).",
     ubicacion: { lat: 9.7456, lng: -84.6387 }
-    ,imagenes: ["img/parque-carara-1.png"]
+    ,imagenes: ["IMG/parque-carara-1.png"]
   },
   {
     nombre: "Parque Nacional Manuel Antonio",
@@ -780,7 +780,7 @@ const parquesData = [
     disponibilidad: "Completa",
     descripcion: "Sendero accesible El Manglar con pasarela que llega hasta el mar. Cuenta con zonas de descanso y accesos adecuados para personas con movilidad reducida.",
     ubicacion: { lat: 9.3895, lng: -84.1401 }
-    ,imagenes: ["img/parque-manuel-antonio-1.png"]
+    ,imagenes: ["IMG/parque-manuel-antonio-1.png"]
 
   },
   {
@@ -791,7 +791,7 @@ const parquesData = [
     disponibilidad: "Completa",
     descripcion: "Sendero Indio Desnudo con tramos accesibles, áreas de descanso y señalización interpretativa. No todo el parque es accesible.",
     ubicacion: { lat: 10.8803, lng: -85.5248 }
-    ,imagenes: ["img/parque-santa-rosa-1.png"]
+    ,imagenes: ["IMG/parque-santa-rosa-1.png"]
   },
   {
     nombre: "Refugio Nacional de Vida Silvestre Gandoca-Manzanillo",
@@ -801,7 +801,7 @@ const parquesData = [
     disponibilidad: "Completa",
     descripcion: "Sector Manzanillo cuenta con accesos planos y tramos transitables para personas con movilidad reducida, aunque no todo el refugio es accesible.",
     ubicacion: { lat: 9.5970, lng: -82.8500 }
-    ,imagenes: ["img/parque-gandoca-1.png"]
+    ,imagenes: ["IMG/parque-gandoca-1.png"]
 
   }
 ];
@@ -988,7 +988,7 @@ const cinesData = [
     descripcion: "Sala Cinemark en Oxígeno Human Playground con acceso amplio, rampas y espacios para personas en silla de ruedas conforme a normativa. Es recomendable confirmar en taquilla la ubicación exacta de los espacios accesibles dentro de la sala.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/cine-oxigeno-1.png",
+      "IMG/cine-oxigeno-1.png",
      
     ]
   },
@@ -1001,7 +1001,7 @@ const cinesData = [
     descripcion: "Cinemark en City Mall, con accesos adaptados y espacios reservados para silla de ruedas. Los espacios accesibles pueden variar según sala interna, por lo que se recomienda confirmar al comprar entradas.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/cine-citymall-1.png",
+      "IMG/cine-citymall-1.png",
     
     ]
   },
@@ -1014,7 +1014,7 @@ const cinesData = [
     descripcion: "Cinemark en Multiplaza Escazú con varias salas y accesos adaptados. Espacios para silla de ruedas conforme a normativa; confirmar ubicación interna para mejor vista.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/cine-multiplaza-escazu-1.png",
+      "IMG/cine-multiplaza-escazu-1.png",
      
     ]
   },
@@ -1027,7 +1027,7 @@ const cinesData = [
     descripcion: "Cinemark en Multiplaza del Este con salas digitales, rampas y espacios accesibles para personas en silla de ruedas; confirmar ubicación de estos espacios al ingresar.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/cine-multiplaza-este-1.png",
+      "IMG/cine-multiplaza-este-1.png",
       
     ]
   },
@@ -1040,7 +1040,7 @@ const cinesData = [
     descripcion: "Cinépolis en Paseo de las Flores con accesos adaptados, baños accesibles y espacios reservados para silla de ruedas; se recomienda verificar la disposición interna de los espacios al ingresar.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/cine-paseo-flores-1.png",
+      "IMG/cine-paseo-flores-1.png",
     ]
   },
   {
@@ -1052,7 +1052,7 @@ const cinesData = [
     descripcion: "Cinépolis en Lincoln Plaza con entrada accesible y espacios reservados para personas en silla de ruedas; se sugiere confirmar la ubicación de estos espacios para obtener la mejor vista.",
     disponibilidad: "Completa",
     imagenes: [
-      "img/cine-lincoln-1.png",
+      "IMG/cine-lincoln-1.png",
       
     ]
   }
@@ -1070,8 +1070,8 @@ const ActividadesData = [
     accesibilidad: "♿ Entrada accesible, parqueo cercano, áreas planas",
     nota: "Las pistas pueden usarse con asistencia. Baños accesibles.",
     imagenes:[
-      "img/bol.cariari-1.png",
-      "img/bol.cariari-2.png",
+      "IMG/bol.cariari-1.png",
+      "IMG/bol.cariari-2.png",
     ],
     ubicacion: {
       lat: 9.9986,
@@ -1085,8 +1085,8 @@ const ActividadesData = [
     accesibilidad: "♿ Mall accesible, ascensores, baños adaptados",
     nota: "El mall es accesible. Las pistas requieren ayuda del personal.",
     imagenes:[
-      "img/bol.city-1.png",
-      "img/bol.city-2.png",
+      "IMG/bol.city-1.png",
+      "IMG/bol.city-2.png",
     ],
   
   ubicacion: {
@@ -1101,8 +1101,8 @@ const ActividadesData = [
     accesibilidad: "♿ Rampas, pasillos amplios",
     nota: "Alta afluencia. Puede haber espera.",
     imagenes:[
-      "img/bol.multi-1.png",
-      "img/bol.multi-2.png",
+      "IMG/bol.multi-1.png",
+      "IMG/bol.multi-2.png",
     ],
     ubicacion: {
       lat: 9.9382, lng: -84.1498
@@ -1117,8 +1117,8 @@ const ActividadesData = [
     accesibilidad: "⚠️ Acceso parcial",
     nota: "El canopy NO es accesible en silla de ruedas, pero sí restaurante y miradores con ayuda.",
     imagenes:[
-      "img/sky-1.png",
-      "img/sky-2.png",
+      "IMG/sky-1.png",
+      "IMG/sky-2.png",
     ],
     ubicacion: {
       lat: 10.3179, lng: -84.8240    }
@@ -1130,8 +1130,8 @@ const ActividadesData = [
     accesibilidad: "⚠️ Acceso limitado",
     nota: "Algunas áreas planas. Teleférico no accesible para silla de ruedas.",
     imagenes:[
-      "img/rainforest-1.png",
-      "img/rainforest-2.png",
+      "IMG/rainforest-1.png",
+      "IMG/rainforest-2.png",
     ],
     ubicacion: {
       lat: 10.1053, lng: -84.3322    }
@@ -1143,8 +1143,8 @@ const ActividadesData = [
     accesibilidad: "♿ Acceso general con rampas",
     nota: "No todos los juegos son accesibles. Parqueo preferencial suele llenarse.",
     imagenes:[
-      "img/PD-1.png",
-      "img/PD-2.png",
+      "IMG/PD-1.png",
+      "IMG/PD-2.png",
     ],
     ubicacion: {
       lat: 9.9573, lng: -84.1075  }
@@ -1219,7 +1219,7 @@ function mostrarActividades(actividades) {
     if (act.imagenes && act.imagenes.length > 1) {
       let imgIndex = 0;
       const slider = document.getElementById(`slider-act-${index}`);
-      const img = slider.querySelector("img");
+      const img = slider.querySelector("IMG");
 
       slider.querySelector(".prev").addEventListener("click", () => {
         imgIndex = (imgIndex - 1 + act.imagenes.length) % act.imagenes.length;
@@ -1338,7 +1338,7 @@ let mapa;
 let marcadores = [];
 
 const iconoAccesible = L.icon({
-  iconUrl: "img/logo-accesible.png",
+  iconUrl: "IMG/logo-accesible.png",
   iconSize: [42, 42],
   iconAnchor: [21, 42],
   popupAnchor: [0, -38]
@@ -1610,7 +1610,7 @@ function mostrarLugares(lugares) {
     // Configurar slider si hay varias imágenes
     if (l.imagenes && l.imagenes.length > 1) {
       const sliderDiv = document.getElementById(`slider-${indexLugar}`);
-      const imgTag = sliderDiv.querySelector("img");
+      const imgTag = sliderDiv.querySelector("IMG");
       let imgIndex = 0;
 
       sliderDiv.querySelector(".prev").addEventListener("click", () => {
