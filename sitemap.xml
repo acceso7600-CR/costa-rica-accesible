@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://acceso7600-cr.github.io/costa-rica-accesible/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
+</set>
 
-  <url>
-    <loc>https://acceso7600-cr.github.io/costa-rica-accesible/#lugares</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://acceso7600-cr.github.io/costa-rica-accesible/#hoteles</loc>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://acceso7600-cr.github.io/costa-rica-accesible/#actividades</loc>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://acceso7600-cr.github.io/costa-rica-accesible/#contacto</loc>
-    <priority>0.80</priority>
-  </url>
-
-</urlset>
