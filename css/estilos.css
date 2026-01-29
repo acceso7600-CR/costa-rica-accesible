@@ -1278,4 +1278,169 @@ button:hover,
     text-align: center;
   }
 }
+/* ===== SOLO dentro de LUGARES: evita que el contenido se monte sobre las pestañas ===== */
+#seccion-lugares #menu-categorias{
+  position: sticky;      /* se mantiene arriba cuando scrolleas */
+  top: 0;
+  z-index: 50;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: rgba(2,44,67,.75);   /* mismo look del fondo, pero para que tape lo de abajo */
+  backdrop-filter: blur(6px);
+}
 
+/* Empuja cualquier contenido que venga después del menú (incluyendo volcanes) */
+#seccion-lugares #descripcion-categoria,
+#seccion-lugares #lugares-lista{
+  position: relative;
+  z-index: 1;
+  margin-top: 18px;
+}
+#seccion-lugares{
+  padding-top: 10px;
+}
+/* ===== VOLCANES: controles de fotos arriba (no sobre letras) ===== */
+
+/* La tarjeta como referencia para posicionar */
+#seccion-lugares .lugar-card{
+  position: relative;
+}
+
+/* Asegura que la imagen sea un bloque completo */
+#seccion-lugares .lugar-card img{
+  display: block;
+}
+
+/* Si tus controles tienen clases típicas (dots / tabs / controles / prev/next) */
+#seccion-lugares .lugar-card :is(
+  .foto-tabs,
+  .pestanas-fotos,
+  .carousel-tabs,
+  .carousel-controls,
+  .slider-controls,
+  .dots,
+  .swiper-pagination,
+  .swiper-button-next,
+  .swiper-button-prev,
+  .prev,
+  .next
+){
+  position: absolute !important;
+  top: 10px !important;      /* <-- arriba */
+  bottom: auto !important;
+  left: 10px;
+  right: 10px;
+  z-index: 20;
+}
+
+/* Empuja el contenido de texto para que no quede debajo de controles */
+#seccion-lugares .lugar-card :is(h3, p, .texto, .descripcion){
+  position: relative;
+  z-index: 1;
+}
+/* ===== VOLCANES: quitar fondo azul de la pestaña ===== */
+#seccion-lugares #menu-categorias{
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
+/* ===== SOLO VOLCANES: quitar efecto barra azul ===== */
+
+/* Cuando está seleccionada la categoría Volcanes */
+#seccion-lugares #menu-categorias{
+  position: static !important;   /* elimina sticky */
+  background: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* Asegura que el contenido quede debajo */
+#seccion-lugares #descripcion-categoria,
+#seccion-lugares #lugares-lista{
+  margin-top: 25px;
+}
+/* ===== VOLCANES: flechas limpias sobre la imagen ===== */
+
+/* El contenedor de la tarjeta */
+#seccion-lugares .lugar-card{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor del botón / flecha (barra azul) */
+#seccion-lugares .lugar-card .foto-tabs,
+#seccion-lugares .lugar-card .carousel-controls,
+#seccion-lugares .lugar-card .slider-controls{
+  background: none !important;   /* ❌ quita barra azul */
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Flechas */
+#seccion-lugares .lugar-card .prev,
+#seccion-lugares .lugar-card .next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);  /* fondo sutil */
+  color: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Posición izquierda / derecha */
+#seccion-lugares .lugar-card .prev{ left: 10px; }
+#seccion-lugares .lugar-card .next{ right: 10px; }
+
+/* Hover elegante */
+#seccion-lugares .lugar-card .prev:hover,
+#seccion-lugares .lugar-card .next:hover{
+  background: rgba(0,0,0,0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+/* ===== VOLCANES: flechas centradas verticalmente en los lados ===== */
+
+#seccion-lugares .lugar-card{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flechas */
+#seccion-lugares .lugar-card .prev,
+#seccion-lugares .lugar-card .next{
+  position: absolute;
+  top: 50%;                          /* centro vertical */
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);      /* fondo discreto */
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Izquierda / derecha */
+#seccion-lugares .lugar-card .prev{
+  left: 10px;
+}
+
+#seccion-lugares .lugar-card .next{
+  right: 10px;
+}
+
+/* Hover elegante */
+#seccion-lugares .lugar-card .prev:hover,
+#seccion-lugares .lugar-card .next:hover{
+  background: rgba(0,0,0,0.75);
+  transform: translateY(-50%) scale(1.15);
+}
