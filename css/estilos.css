@@ -14,16 +14,17 @@ body{
   background:var(--fondo);
   color:var(--texto);
   font-family:"Segoe UI",Arial,sans-serif;
-  padding:40px 20px;
+  padding:0;
   margin:0;
 }
 
 /* ============================= */
-/* CONTENEDOR GENERAL */
+/* CONTAINER GENERAL PARA CENTRAR Y LIMITE DE ANCHO */
+/* ============================= */
 .container {
-  max-width: 1280px;   /* ancho máximo para laptops grandes */
-  margin: 0 auto;      /* centrado horizontal */
-  padding: 0 15px;     /* espacio interno en móviles */
+  max-width: 1280px;   /* ancho máximo */
+  margin: 0 auto;      /* centrar */
+  padding: 0 20px;     /* espacio lateral en móviles */
   box-sizing: border-box;
 }
 
@@ -137,14 +138,9 @@ header{
   flex-shrink:0;
 }
 
-/* ANIMACIÓN CONTINUA */
 @keyframes scroll-horizontal{
-  0%{
-    transform:translateX(0);
-  }
-  100%{
-    transform:translateX(calc(-250px * 4 - 80px));
-  }
+  0%{ transform:translateX(0);}
+  100%{ transform:translateX(calc(-250px * 4 - 80px));}
 }
 
 /* ============================= */
@@ -158,30 +154,24 @@ header{
   flex-wrap:wrap;
 }
 
-/* QUITAMOS estilo nativo */
 #filtros select{
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
-
   padding:16px 26px;
   font-size:1.15rem;
   font-weight:600;
   border-radius:18px;
   border:none;
-
   color:#ffffff;
   min-width:210px;
   text-align:center;
   cursor:pointer;
-
   box-shadow:0 10px 25px rgba(0,0,0,.45);
   transition:.3s;
-
   background-repeat:no-repeat;
   background-position:right 18px center;
   background-size:20px;
-
   background-image:url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
 }
 
@@ -194,24 +184,10 @@ header{
   outline:none;
 }
 
-/* COLORES REALES */
-#filtro-provincia{
-  background:linear-gradient(135deg,#00c6ff,#0072ff) !important;
-}
-
-#filtro-categoria{
-  background:linear-gradient(135deg,#9b5cff,#5f2cff) !important;
-}
-
-#filtro-accesibilidad{
-  background:linear-gradient(135deg,#00e6a8,#00b894) !important;
-  color:#00352c;
-}
-
-#filtros option{
-  background:#0b1f2a;
-  color:#fff;
-}
+#filtro-provincia{ background:linear-gradient(135deg,#00c6ff,#0072ff) !important;}
+#filtro-categoria{ background:linear-gradient(135deg,#9b5cff,#5f2cff) !important;}
+#filtro-accesibilidad{ background:linear-gradient(135deg,#00e6a8,#00b894) !important; color:#00352c;}
+#filtros option{ background:#0b1f2a; color:#fff; }
 
 /* ============================= */
 /* LISTA DE LUGARES */
@@ -232,9 +208,7 @@ header{
   transition:.3s;
 }
 
-.tarjeta:hover{
-  transform:translateY(-8px);
-}
+.tarjeta:hover{ transform:translateY(-8px); }
 
 .tarjeta IMG{
   width:100%;
@@ -277,9 +251,7 @@ header{
   transition:.3s;
 }
 
-.red-icon:hover{
-  transform:translateY(-4px);
-}
+.red-icon:hover{ transform:translateY(-4px); }
 
 .red-icon.instagram{background:#e1306c;}
 .red-icon.tiktok{background:#000;}
@@ -314,9 +286,7 @@ footer{
   width:90%;
 }
 
-.oculto{
-  display:none !important;
-}
+.oculto{ display:none !important; }
 
 /* ============================= */
 /* ANIMACIÓN */
@@ -351,9 +321,7 @@ footer{
   margin-bottom: 18px;
 }
 
-#form-lugar textarea{
-  min-height: 150px;
-}
+#form-lugar textarea{ min-height: 150px; }
 
 #form-lugar button{
   width: 100%;
@@ -374,91 +342,34 @@ footer{
 }
 
 /* ============================= */
-/* RESPONSIVE / CELULAR Y TABLET */
-@media (max-width: 1024px){
+/* AJUSTES RESPONSIVE PARA CELULAR Y TABLET */
+@media screen and (max-width: 768px){
   .header-contenido h1{
-    font-size:3.2rem;
+    font-size:2.5rem;
   }
+  
+  .pestana{
+    padding:10px 18px;
+    font-size:0.9rem;
+  }
+  
   #menu-pestanas{
     gap:10px;
   }
-  .pestana{
-    padding:12px 20px;
-    font-size:0.95rem;
+  
+  #lugares-lista{
+    grid-template-columns:1fr;
   }
-  #galeria-rotativa .slider-track img{
-    width:200px;
-    height:140px;
+  
+  .tarjeta, .lugar-card, .tarjeta-transporte, .tarjeta-restaurante{
+    max-width:100%;
   }
-  #mapa-cr{
-    height:280px;
-  }
-}
-
-@media (max-width: 768px){
-  body{
-    padding:30px 15px;
-  }
-  .header-contenido{
-    flex-direction:column;
-  }
-  .header-contenido h1{
-    font-size:2.4rem;
-    text-align:center;
-  }
-  #menu-pestanas{
-    flex-wrap:wrap;
-    gap:8px;
-  }
-  .pestana{
-    padding:10px 14px;
-    font-size:0.85rem;
-  }
-  #galeria-rotativa .slider-track img{
-    width:160px;
-    height:120px;
-  }
-  #mapa-cr{
-    height:220px;
-  }
-  #form-lugar input,
-  #form-lugar select,
-  #form-lugar textarea{
+  
+  #mapa-cr{ height:250px; }
+  
+  #form-lugar input, #form-lugar select, #form-lugar textarea, #form-lugar button{
     font-size:1rem;
-    padding:14px 16px;
-  }
-  #form-lugar button{
-    font-size:1.1rem;
     padding:14px 16px;
   }
 }
 
-@media (max-width: 480px){
-  .header-contenido h1{
-    font-size:1.8rem;
-  }
-  #menu-pestanas{
-    flex-direction:column;
-  }
-  .pestana{
-    padding:8px 12px;
-    font-size:0.8rem;
-  }
-  #galeria-rotativa .slider-track img{
-    width:140px;
-    height:100px;
-  }
-  #mapa-cr{
-    height:180px;
-  }
-  #form-lugar input,
-  #form-lugar select,
-  #form-lugar textarea{
-    font-size:0.95rem;
-    padding:12px 14px;
-  }
-  #form-lugar button{
-    font-size:1rem;
-    padding:12px 14px;
-  }
-}
