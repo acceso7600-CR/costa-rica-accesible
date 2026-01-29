@@ -1209,5 +1209,41 @@ button:hover,
   filter: brightness(1.1);
 }
 
+/* Ajuste header solo para celular */
+@media (max-width: 600px) {
+  header .header-contenido {
+    display: flex;
+    flex-direction: row; /* mantener en fila */
+    justify-content: center; /* centrar contenido */
+    align-items: center;
+    position: relative;
+  }
+
+  header .header-contenido h1 {
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  header .header-contenido img.icono-logo {
+    height: 40px;
+    margin: 0 5px;
+  }
+
+  header .header-contenido img.icono-flag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+  }
+
+  header .header-contenido img.icono-flag:first-child {
+    left: 5px;
+  }
+
+  header .header-contenido img.icono-flag:last-child {
+    right: 5px;
+  }
+}
 
 
