@@ -1246,38 +1246,7 @@ button:hover,
   }
 }
 
-/* ===== FIX HEADER RESPONSIVE (evita recorte de logos en móvil) ===== */
-@media (max-width: 600px) {
 
-  header .header-contenido{
-    flex-wrap: wrap;            /* permite bajar elementos si falta espacio */
-    gap: 8px;
-    padding: 0 10px;            /* respeta bordes del celular */
-    overflow: visible;          /* evita cortes raros */
-  }
-
-  /* Quita el absoluto que está causando el recorte */
-  header .header-contenido img.icono-flag{
-    position: static !important;
-    transform: none !important;
-    height: clamp(22px, 6vw, 32px);
-    width: auto;
-    flex: 0 0 auto;
-  }
-
-  header .header-contenido img.icono-logo{
-    height: clamp(28px, 8vw, 44px);
-    width: auto;
-    flex: 0 0 auto;
-  }
-
-  header .header-contenido h1{
-    font-size: clamp(1.2rem, 5.5vw, 1.8rem);
-    margin: 0 6px;
-    flex: 1 1 100%;            /* el título puede ocupar una línea completa */
-    text-align: center;
-  }
-}
 /* ===== SOLO dentro de LUGARES: evita que el contenido se monte sobre las pestañas ===== */
 #seccion-lugares #menu-categorias{
   position: sticky;      /* se mantiene arriba cuando scrolleas */
@@ -1446,22 +1415,34 @@ button:hover,
 }
 
 
-@media (max-width: 600px) {
-  header .header-contenido{
-    flex-wrap: nowrap;
-    padding: 0 10px;
+/* ===== HEADER MOBILE (ÚNICO) ===== */
+@media (max-width: 600px){
+  header{
+    margin-top: 20px;
+    margin-bottom: 35px;
   }
+
+  header .header-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;         /* todo en una línea */
+  }
+
+  /* banderas y logos iguales, sin absolute */
+  header .header-contenido .icono-flag,
+  header .header-contenido .icono-logo{
+    width: auto;
+    height: 30px;              /* tamaño fijo limpio */
+    flex: 0 0 auto;
+  }
+
   header .header-contenido h1{
-    min-width: 0;              /* clave para que flex no corte */
-    font-size: clamp(1.0rem, 4.8vw, 1.5rem);
-    margin: 0 6px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    margin: 0 8px;
+    font-size: 1.25rem;
+    line-height: 1.1;
     white-space: nowrap;
   }
-  header .header-contenido img.icono-flag,
-  header .header-contenido img.icono-logo{
-    width: auto;
-    height: clamp(22px, 6vw, 36px);
-  }
 }
+
