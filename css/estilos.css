@@ -1246,4 +1246,36 @@ button:hover,
   }
 }
 
+/* ===== FIX HEADER RESPONSIVE (evita recorte de logos en móvil) ===== */
+@media (max-width: 600px) {
+
+  header .header-contenido{
+    flex-wrap: wrap;            /* permite bajar elementos si falta espacio */
+    gap: 8px;
+    padding: 0 10px;            /* respeta bordes del celular */
+    overflow: visible;          /* evita cortes raros */
+  }
+
+  /* Quita el absoluto que está causando el recorte */
+  header .header-contenido img.icono-flag{
+    position: static !important;
+    transform: none !important;
+    height: clamp(22px, 6vw, 32px);
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  header .header-contenido img.icono-logo{
+    height: clamp(28px, 8vw, 44px);
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  header .header-contenido h1{
+    font-size: clamp(1.2rem, 5.5vw, 1.8rem);
+    margin: 0 6px;
+    flex: 1 1 100%;            /* el título puede ocupar una línea completa */
+    text-align: center;
+  }
+}
 
