@@ -1209,50 +1209,5 @@ button:hover,
   filter: brightness(1.1);
 }
 
-/* HEADER GENERAL */
-header {
-  background-color: #fff; /* Ajusta si quieres */
-  padding: 10px 20px;
-}
-
-.header-contenido {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* centra el texto "Costa Rica Accesible" */
-  gap: 10px; /* espacio entre logos y texto */
-  flex-wrap: wrap; /* permite que los logos bajen a otra línea si no hay espacio */
-}
-
-/* LOGOS Y BANDERAS */
-.header-contenido img.icono-logo,
-.header-contenido img.icono-flag {
-  height: 50px; /* tamaño base para desktop */
-  width: auto;
-}
-
-/* TEXTO */
-.header-contenido h1 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 0 10px;
-  flex-shrink: 0; /* evita que el texto se haga demasiado pequeño */
-}
-
-/* MEDIA QUERY CELULAR */
-@media (max-width: 600px) {
-  .header-contenido {
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .header-contenido img.icono-logo,
-  .header-contenido img.icono-flag {
-    height: 35px; /* logos más pequeños en móvil */
-  }
-
-  .header-contenido h1 {
-    font-size: 1.4rem;
-  }
-}
 
 
